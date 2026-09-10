@@ -1,65 +1,55 @@
-/* Reset Dasar & Font */
+/* Reset Dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
 }
 
 body {
     background-color: #121212;
     color: #e0e0e0;
-    line-height: 1.6;
 }
 
-/* Header Presisi */
+/* Header Ramping & Presisi (Persis Foto Kanan) */
 header {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    padding: 12px 16px;
+    background-color: #0f172a; /* Abu gelap pekat sedikit kebiruan */
+    height: 48px;               /* Tinggi header ramping */
+    padding: 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #2c2c2c;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Tombol Menu Garis Tiga */
+/* Tombol Menu Garis Tiga (Polos tanpa border) */
 .menu-btn {
-    background: none;
+    background: transparent;
     border: none;
-    color: #ffffff;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px;
+    padding: 0;
 }
 
-/* Logo Tengah */
-header .logo {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #38bdf8;
-    letter-spacing: 0.5px;
-}
-
-/* Bendera SVG */
+/* Bendera Indonesia */
 .flag-icon {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 3px;
+    border-radius: 4px;
     overflow: hidden;
+}
+
+.flag-icon svg {
+    border-radius: 3px;
 }
 
 /* Banner Hero */
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
     background-color: #181818;
     border-bottom: 1px solid #2a2a2a;
-    margin-bottom: 30px;
 }
 
 .hero h1 {
@@ -73,26 +63,19 @@ header .logo {
     font-size: 0.95rem;
 }
 
-/* Container Produk */
 .container {
-    padding: 0 20px 40px;
+    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Tombol Utama */
 .btn-main {
     background-color: #2563eb;
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.btn-main:active {
-    transform: scale(0.98);
+    margin-top: 15px;
 }
