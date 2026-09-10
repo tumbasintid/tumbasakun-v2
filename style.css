@@ -3,46 +3,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* Background Utama - Abu-Abu Gelap */
 body {
-    background-color: #f4f6f9;
-    color: #333;
+    background-color: #121212; /* Abu-abu sangat gelap khas dark mode */
+    color: #e0e0e0;            /* Teks abu terang agar nyaman dibaca */
+    line-height: 1.6;
 }
 
-/* Header & Navbar */
+/* Header / Navbar */
 header {
-    background-color: #0d6efd;
-    color: white;
+    background-color: #1e1e1e; /* Abu-abu gelap sedikit lebih terang dari background */
+    color: #ffffff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #2c2c2c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header .logo {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #38bdf8; /* Warna biru cyan aksen */
+    letter-spacing: 0.5px;
 }
 
 /* Banner Hero */
 .hero {
     text-align: center;
-    padding: 40px 20px;
-    background: white;
-    margin-bottom: 20px;
+    padding: 50px 20px;
+    background-color: #181818;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 30px;
 }
 
 .hero h1 {
     font-size: 1.8rem;
-    color: #0d6efd;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .hero p {
-    color: #666;
+    color: #a0a0a0;
     font-size: 0.95rem;
 }
 
@@ -53,13 +59,19 @@ header .logo {
     margin: 0 auto;
 }
 
+/* Tombol Utama */
 .btn-main {
-    background-color: #0d6efd;
+    background-color: #2563eb;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 20px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-main:active {
+    transform: scale(0.98);
 }
