@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tumbas Akun - Layanan Akun Digital</title>
-    <!-- Menghubungkan ke file CSS terpisah -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
+    <!-- Header dengan Menu Baris Tiga, Logo, dan Bendera SVG -->
     <header>
+        <button class="menu-btn" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
         <div class="logo">TumbasAkun.id</div>
+
+        <div class="flag-icon" title="Indonesia">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="10" fill="#E70011"/>
+                <rect y="10" width="28" height="10" fill="#FFFFFF"/>
+                <rect width="28" height="20" rx="2" stroke="#2C2C2C" stroke-width="0.5"/>
+            </svg>
+        </div>
     </header>
 
     <!-- Banner Utama -->
@@ -22,10 +37,9 @@
     </section>
 
     <main class="container">
-        <!-- Tempat Katalog Produk Nanti -->
+        <!-- Tempat Katalog Produk -->
     </main>
 
-    <!-- Menghubungkan ke file JavaScript terpisah -->
     <script src="script.js"></script>
 </body>
 </html>
