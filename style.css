@@ -20,6 +20,11 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #21262d;
+    
+    /* Properti agar sticky/menempel di atas */
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .menu-btn {
